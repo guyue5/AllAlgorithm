@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E55A536B-78FB-4400-856E-484FBE0BBCB0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AllAlgorithm</RootNamespace>
+    <AssemblyName>AllAlgorithm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReadGEN.cs" />
+    <Compile Include="四叉树\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="四叉树\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="四叉树\QuadTree.cs" />
+    <Compile Include="四叉树\ReadData.cs" />
+    <Compile Include="地图投影\Boundary.cs" />
+    <Compile Include="地图投影\DataRead.cs" />
+    <Compile Include="地图投影\Draw.cs" />
+    <Compile Include="地图投影\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="地图投影\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="地图投影\Graticule.cs" />
+    <Compile Include="地图投影\Orbit.cs" />
+    <Compile Include="地图投影\ProConvert.cs" />
+    <Compile Include="多边形面积\Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="多边形面积\Area.designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="多边形面积\CalculateArea.cs" />
+    <Compile Include="多边形面积\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="多边形面积\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="多边形面积\MercatorInverse.cs" />
+    <Compile Include="多边形面积\ReadShp.cs" />
+    <Compile Include="多边形面积\ShapeType.cs" />
+    <Compile Include="左转\Arc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="左转\Arc.designer.cs">
+      <DependentUpon>Arc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="左转\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="左转\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="左转\Method.cs" />
+    <Compile Include="左转\Node.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="左转\Node.designer.cs">
+      <DependentUpon>Node.cs</DependentUpon>
+    </Compile>
+    <Compile Include="左转\PolyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="左转\PolyForm.designer.cs">
+      <DependentUpon>PolyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="左转\ReadGen.cs" />
+    <Compile Include="数据编码\DisplayName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据编码\DisplayName.Designer.cs">
+      <DependentUpon>DisplayName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据编码\Transform.cs" />
+    <Compile Include="数据编码\TransformCoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据编码\TransformCoor.Designer.cs">
+      <DependentUpon>TransformCoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据编码\ViewName.cs" />
+    <Compile Include="最佳工作序列\BestOrder.cs" />
+    <Compile Include="最佳工作序列\Sequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="最佳工作序列\Sequence.Designer.cs">
+      <DependentUpon>Sequence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="跳马\HorseVal.cs" />
+    <Compile Include="跳马\HorseVault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="跳马\HorseVault.Designer.cs">
+      <DependentUpon>HorseVault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="道格拉斯\CompressShapeFile.cs" />
+    <Compile Include="道格拉斯\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="道格拉斯\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="道格拉斯\Readdata.cs" />
+    <EmbeddedResource Include="四叉树\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="地图投影\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="多边形面积\Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="多边形面积\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="左转\Arc.resx">
+      <DependentUpon>Arc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="左转\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="左转\Node.resx">
+      <DependentUpon>Node.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="左转\PolyForm.resx">
+      <DependentUpon>PolyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据编码\DisplayName.resx">
+      <DependentUpon>DisplayName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据编码\TransformCoor.resx">
+      <DependentUpon>TransformCoor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="最佳工作序列\Sequence.resx">
+      <DependentUpon>Sequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="跳马\HorseVault.resx">
+      <DependentUpon>HorseVault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="道格拉斯\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
